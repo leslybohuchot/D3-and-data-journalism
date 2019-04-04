@@ -48,7 +48,7 @@ function success_all(all_data) {
     .range([0, width]);
 
   var yLinearScale = d3.scaleLinear()
-    .domain([20, d3.max(all_data, d => d.age)])
+    .domain([3, d3.max(all_data, d => d.age)])
     .range([height, 0]);
 
   var x_axis = d3.axisBottom(xLinearScale)
