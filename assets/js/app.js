@@ -76,8 +76,8 @@ function success_all(all_data) {
     .attr("cx", d => xLinearScale(d.healthcare))
     .attr("cy", d => yLinearScale(d.age))
     .attr("r", "13")
-    .attr("fill", "#788dc2")
-    .attr("opacity", ".75")
+    .attr("fill", "pink")
+    .attr("opacity", "0.5")
 
 
   
@@ -88,9 +88,9 @@ function success_all(all_data) {
     .append("text")
     .attr("x", d => xLinearScale(d.healthcare))
     .attr("y", d => yLinearScale(d.age))
-    .style("font-size", "13px")
+    .style("font-size", "10px")
     .style("text-anchor", "middle")
-    .style('fill', 'white')
+    .style('fill', 'black')
     .text(d => (d.abbr));
 
     //axis labels 
